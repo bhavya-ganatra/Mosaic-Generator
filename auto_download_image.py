@@ -70,8 +70,8 @@ def main(url, path):
         download(img, path)
 if __name__ == '__main__':
 	parser = argparse.ArgumentParser(description='Creates a photomosaic from input images')
-	parser.add_argument('--url', dest='target_url', required=True)
-	parser.add_argument('--download-folder', dest='download_folder', required=False)
+	parser.add_argument('--url', dest='target_url', required=True,help='url of website')
+	parser.add_argument('--download-folder', dest='download_folder', required=False, help='download folder')
 	args = parser.parse_args()
 	
 	download_path = 'autodownloaded'
