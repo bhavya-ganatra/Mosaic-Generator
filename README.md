@@ -23,13 +23,13 @@ For auto download image script you need to download and install:
 
 ## mosaic_generator.py
 Type following command in command prompt:
-'''
+```
 python mosaic_generator.py -h
-'''
+```
 
 You will get description like these:
 
-'''
+```
 usage: mosaic_generator.py [-h] --target-image TARGET_IMAGE --input-folder
                            INPUT_FOLDER --grid-size GRID_SIZE GRID_SIZE
                            [--output-file OUTFILE]
@@ -48,7 +48,7 @@ optional arguments:
   --output-file OUTFILE
                         Name of output file don't forget to use extension
 
-'''
+```
 
 So, what you need is input folder which contains dataset of images and one input file.
 Here to getting start with it first get height and width of image and divide it by 10 and
@@ -60,20 +60,20 @@ down to let's say 128x128 or decrese your dataset.
 
 ### Example:
 Type below line into your command prompt
-'''
+```
 python mosaic_generator.py --target-image 'path for target image' --input-folder 'path for input folder' --grid-size 172 194 --output-file 'output file name +.png' 
-'''
+```
 
 In above code don't use ''.
 
 ## auto_download_image.py
 Type following line in commnd prompt
-'''
+```
 python auto_download_image.py -h
-'''
+```
 
 
-'''
+```
 usage: auto_download_image.py [-h] --url TARGET_URL
                               [--download-folder DOWNLOAD_FOLDER]
 
@@ -85,15 +85,15 @@ optional arguments:
   --download-folder DOWNLOAD_FOLDER
                         download folder
 
-'''
+```
 
 Script will download all images from given url
 
 ### Example:
 
-'''
+```
 python  auto_download_image.py --url 'url' --download-folder 'path for download folder'
-'''
+```
 
 ## Resources:
 There are many image dataset available, which you can download freely.
